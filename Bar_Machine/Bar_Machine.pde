@@ -22,4 +22,4 @@ void draw() {
   image(img, 0, 0);
 }
 void start() {
-}
+} .
