@@ -7,9 +7,10 @@ void setup() {
   size(1280, 720);
   background(255);
 
+  movie = new Movie(this, "");
   img = loadImage("start.png");
 
-  movie = new Movie(this, " ");
+
   movie.loop();
 }
 
@@ -22,5 +23,4 @@ void draw() {
   image(img, 320, 180);
 }
 void start() {
-  
 }
