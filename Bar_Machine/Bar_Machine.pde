@@ -2,12 +2,14 @@ import processing.video.*;
 
 Movie movie;
 PImage img;
+int bX = 150, bY = 150;
+
 
 void setup() {
   size(1280, 720);
   background(255);
 
-  movie = new Movie(this, "");
+  movie = new Movie(this, "vand.mp4");
   img = loadImage("start.png");
 
 
@@ -24,3 +26,10 @@ void draw() {
 }
 void start() {
 }
+
+void mouseClicked(){
+  if( mouseX > bX && mouseX < (bX + img.width) &&
+      mouseY > bY && mouseY < (bY + img.height)){
+        
+      };
+    }
