@@ -1,4 +1,4 @@
-import processing.video.*;
+import processing.video.*; //til at indsætte videoer som baggrund
 
 
 PImage Forside; //start
