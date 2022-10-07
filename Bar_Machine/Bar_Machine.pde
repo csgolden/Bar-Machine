@@ -60,8 +60,14 @@ void draw() {
     background(255);
     image(Kaffe, 0, 0);
   } else if (state == 3) {
-    background(0);
-    image(Kaffe, 0, 0);
+    background(255);
+    image(The, 0, 0);
+    } else if (state == 4) {
+      background(255);
+    image(ÆbleJuice, 0, 0);
+    } else if (state == 5) {
+      background(255);
+    image(AppelsinJuice, 0, 0);
   } else {
   }
 }
@@ -78,9 +84,9 @@ void mousePressed() {
     state = 2;
   } else if (state==1&&mouseX>357&&mouseX<357+153&&mouseY>620&&mouseY<620+94) {
     state = 3;
-  } else if (state==2&&mouseX>884&&mouseX<884+140&&mouseY>599&&mouseY<599+77) {
-    state = 1;
-  } else if (state==2&&mouseX>1050&&mouseX<1050+140&&mouseY>599&&mouseY<599+77) {
+  } else if (state==1&&mouseX>659&&mouseX<659+184&&mouseY>620&&mouseY<620+94) {
+    state = 4;
+  } else if (state==2&&mouseX>1050&&mouseX<1050+843&&mouseY>620&&mouseY<620+94) {
     state = 0;
   }
   if (mousePressed == true) {
