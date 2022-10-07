@@ -80,9 +80,8 @@ void mousePressed() {
   } else if (state==2&&mouseX>884&&mouseX<884+140&&mouseY>599&&mouseY<599+77) {
     state = 1;
   } else if (state==2&&mouseX>1050&&mouseX<1050+140&&mouseY>599&&mouseY<599+77) {
-    state = 3;
-  } else if (state==2&&mouseX>1050&&mouseX<1050+140&&mouseY>599&&mouseY>599+77) {
-    state = 3;
+    state = 0;
+  } 
   if (mousePressed == true) {
     x = mouseX;
     y = mouseY;
