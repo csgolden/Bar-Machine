@@ -20,7 +20,7 @@ Movie movie;
 Byte state = 0;
 int idletime = 0;
 Boolean Mixer = false;
-int x, y;
+int x, y;  
 
 
 void setup() {
@@ -44,7 +44,6 @@ void draw() {
     state = 0;
     idletime = 0;
   }
-  //println(idletime);
   if (state == 0) {
     image(Forside, 320, 180);
     byte c = 0;
@@ -80,13 +79,10 @@ void mousePressed() {
     state = 2;
   } else if (state==2&&mouseX>884&&mouseX<884+140&&mouseY>599&&mouseY<599+77) {
     state = 1;
-  } else if (state==2&&mouseX>1050&&mouseX<1050+140&&mouseY>599&&mouseY<599+77&&!Mixer) {
-    Mixer = true;
-  //  println("Hæld!");
-    delay(3000);
-  //  println("Færdig!");
-    Mixer = false;
-  }
+  } else if (state==2&&mouseX>1050&&mouseX<1050+140&&mouseY>599&&mouseY<599+77) {
+    state = 3;
+  } else if (state==2&&mouseX>1050&&mouseX<1050+140&&mouseY>599&&mouseY>599+77) {
+    state = 3;
   if (mousePressed == true) {
     x = mouseX;
     y = mouseY;
