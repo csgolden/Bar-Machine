@@ -8,7 +8,7 @@ int x, y;
 void setup() {
   size(1280, 720);
   frameRate(60);
-  Forside = loadImage("");
+  Forside = loadImage("Forside.jpg");
   Vælgdrink = loadImage("Vælgdrink.jpg");
  // information = loadImage("Mere information.png");
 }
