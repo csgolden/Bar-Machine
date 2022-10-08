@@ -31,6 +31,8 @@ void setup() {
   Menu = loadImage("Bar.jpg");
 
   Kaffe = loadImage("Kaffe.jpg");
+  The = loadImage("The.jpg");
+  ÆbleJuice = loadImage("Æblejuice.jpg");
   movie.loop();
 }
 
@@ -61,10 +63,10 @@ void draw() {
     image(Kaffe, 0, 0);
   } else if (state == 3) {
     background(255);
-    image(Kaffe, 0, 0);
+    image(The, 0, 0);
     } else if (state == 4) {
       background(255);
-    image(Kaffe, 0, 0);
+    image(ÆbleJuice, 0, 0);
     } else if (state == 5) {
       background(255);
     image(Kaffe, 0, 0);
