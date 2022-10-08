@@ -61,13 +61,13 @@ void draw() {
     image(Kaffe, 0, 0);
   } else if (state == 3) {
     background(255);
-    image(The, 0, 0);
+    image(Kaffe, 0, 0);
     } else if (state == 4) {
       background(255);
-    image(ÆbleJuice, 0, 0);
+    image(Kaffe, 0, 0);
     } else if (state == 5) {
       background(255);
-    image(AppelsinJuice, 0, 0);
+    image(Kaffe, 0, 0);
   } else {
   }
 }
