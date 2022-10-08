@@ -30,7 +30,7 @@ void setup() {
   Forside = loadImage("start.png");
   Menu = loadImage("Bar.jpg");
 
-  Kaffe = loadImage("Info.png");
+  Kaffe = loadImage("Kaffe.jpg");
   movie.loop();
 }
 
@@ -80,9 +80,9 @@ void mousePressed() {
 
   if (state==0&&mouseX>543&&mouseX<543+202&&mouseY>251&&mouseY<251+217) {
     state = 1;
-  } else if (state==1&&mouseX>22&&mouseX<22+141&&mouseY>620&&mouseY<620+96) {
+  } else if (state==1&&mouseX>22&&mouseX<22+252&&mouseY>519&&mouseY<519+196) {
     state = 2;
-  } else if (state==1&&mouseX>357&&mouseX<357+153&&mouseY>620&&mouseY<620+94) {
+  } else if (state==1&&mouseX>357&&mouseX<357+258&&mouseY>521&&mouseY<521+204) {
     state = 3;
   } else if (state==1&&mouseX>659&&mouseX<659+184&&mouseY>620&&mouseY<620+94) {
     state = 4;
