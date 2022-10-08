@@ -121,7 +121,18 @@ void draw() {
       state = 4;
     } else if (state==7&&mouseX>20&&mouseX<20+60&&mouseY>604&&mouseY<604+91) {
       state = 5;
+    } else if (state==6&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
+      state = 8;
+    } else if (state==6&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
+      state = 8;
+    } else if (state==7&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
+      state = 9;
+    } else if (state==7&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
+      state = 9;
     }
+    
+    
+    
     
     
     if (mousePressed == true) {
@@ -130,4 +141,3 @@ void draw() {
       println("x is now: " + x + " y is now: " + y);
     }
   }
-ggg
