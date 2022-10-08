@@ -15,7 +15,6 @@ Movie Skænk;
 Movie movie;
 Byte state = 0;
 int idletime = 0;
-Boolean Mixer = false;
 int x, y;
 
 
@@ -80,11 +79,7 @@ void draw() {
 }
   void mousePressed() {
     idletime = 0;
-    if (Mixer) {
-      return;
-    }
-  
-
+    
     if (state==0&&mouseX>543&&mouseX<543+202&&mouseY>251&&mouseY<251+217) {
       state = 1;
     } else if (state==1&&mouseX>22&&mouseX<22+252&&mouseY>519&&mouseY<519+196) {
@@ -130,10 +125,6 @@ void draw() {
     } else if (state==7&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
       state = 9;
     }
-    
-    
-    
-    
     
     if (mousePressed == true) {
       x = mouseX;
