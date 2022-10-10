@@ -76,6 +76,21 @@ void draw() {
   } else if (state == 9) {
     image(Betaling2, 0, 0);
   } else if (state == 10) {
+    image(Metode1, 0, 0);
+  } else if (state == 11) {
+    image(Metode2, 0, 0);
+  } else if (state == 12) {
+    image(Betaling1, 0, 0);
+  } else if (state == 13) {
+    image(Betaling2, 0, 0);
+  } else if (state == 14) {
+    background(0); 
+  } else if (state == 15) {
+    
+  } else if (state == 16) {
+    
+  } else if (state == 17) {
+    
   }
 }
 void mousePressed() {
@@ -104,11 +119,11 @@ void mousePressed() {
   } else if (state==2&&mouseX>547&&mouseX<547+187&&mouseY>573&&mouseY<573+61) {
     state = 6;
   } else if (state==3&&mouseX>547&&mouseX<547+187&&mouseY>573&&mouseY<573+61) {
-    state = 6;
+    state = 10;
   } else if (state==4&&mouseX>547&&mouseX<547+187&&mouseY>573&&mouseY<573+61) {
     state = 7;
   } else if (state==5&&mouseX>547&&mouseX<547+187&&mouseY>573&&mouseY<573+61) {
-    state = 7;
+    state = 11;
   } else if (state==6&&mouseX>20&&mouseX<20+60&&mouseY>604&&mouseY<604+91) {
     state = 2;
   } else if (state==6&&mouseX>20&&mouseX<20+60&&mouseY>604&&mouseY<604+91) {
@@ -120,11 +135,19 @@ void mousePressed() {
   } else if (state==6&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
     state = 8;
   } else if (state==6&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
-    state = 8;
+    state = 12;
   } else if (state==7&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
     state = 9;
   } else if (state==7&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
-    state = 9;
+    state = 13;
+  } else if (state==8&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
+    state = 14;
+  } else if (state==12&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
+    state = 15;
+  } else if (state==9&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
+    state = 16;
+  } else if (state==13&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
+    state = 17;
   }
 
   if (mousePressed == true) {
