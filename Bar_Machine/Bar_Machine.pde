@@ -4,16 +4,16 @@ import processing.video.*; //til at indsætte videoer som baggrund
 PImage Forside; //start
 PImage Menu; //Menu med drikke
 PImage Kaffe; //kaffe info
-PImage The;
-PImage ÆbleJuice;
-PImage AppelsinJuice;
-PImage Metode1;
-PImage Metode2;
-PImage Betaling1;
-PImage Betaling2;
-Movie Skænk;
-Movie movie;
-Byte state = 0;
+PImage The; //The info
+PImage ÆbleJuice; //ÆbleJuice info
+PImage AppelsinJuice; //AppelsinJuice info
+PImage Metode1; //Metode 1
+PImage Metode2; //Metode 2
+PImage Betaling1; //Betaling 1
+PImage Betaling2; //Betaling 2
+Movie Skænk; //skænk animation
+Movie movie; //start skærm
+Byte state = 0; 
 int idletime = 0;
 int x, y;
 
