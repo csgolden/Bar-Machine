@@ -85,11 +85,11 @@ void draw() {
   } else if (state == 14) {
     background(0); 
   } else if (state == 15) {
-    
+    background(0); 
   } else if (state == 16) {
-    
+    background(0); 
   } else if (state == 17) {
-    
+    background(0); 
   }
 }
 void mousePressed() {
