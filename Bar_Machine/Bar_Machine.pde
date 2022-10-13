@@ -24,7 +24,6 @@ void setup() {
   movie = new Movie(this, "vand.mp4");
   Forside = loadImage("start.png");
   Menu = loadImage("Bar.jpg");
-
   Kaffe = loadImage("Kaffe.jpg");
   The = loadImage("The.jpg");
   ÆbleJuice = loadImage("Æblejuice.jpg");
@@ -126,11 +125,11 @@ void mousePressed() {
     state = 11;
   } else if (state==6&&mouseX>20&&mouseX<20+60&&mouseY>604&&mouseY<604+91) {
     state = 2;
-  } else if (state==6&&mouseX>20&&mouseX<20+60&&mouseY>604&&mouseY<604+91) {
+  } else if (state==10&&mouseX>20&&mouseX<20+60&&mouseY>604&&mouseY<604+91) {
     state = 3;
   } else if (state==7&&mouseX>20&&mouseX<20+60&&mouseY>604&&mouseY<604+91) {
     state = 4;
-  } else if (state==7&&mouseX>20&&mouseX<20+60&&mouseY>604&&mouseY<604+91) {
+  } else if (state==11&&mouseX>20&&mouseX<20+60&&mouseY>604&&mouseY<604+91) {
     state = 5;
   } else if (state==6&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
     state = 8;
