@@ -15,7 +15,7 @@ Movie Skænk; //skænk animation
 Movie movie; //start skærm
 Byte state = 0; 
 int idletime = 0;
-int x, y;
+
 
 
 void setup() {
@@ -32,6 +32,7 @@ void setup() {
   Metode2 = loadImage("Beløb2.jpg");
   Betaling1 = loadImage("Betaling1.jpg");
   Betaling2 = loadImage("Betaling2.jpg");
+  Skænk = new Movie(this, "Hældop.mp4");
 
   movie.loop();
 }
@@ -56,7 +57,7 @@ void draw() {
         c = 0;
       }
     }
-  } else if (state == 1) {
+  } else if (state == 1) { // her har vi de forskellige states hvor man kan lave forskellige sider.
     image(Menu, 0, 0);
   } else if (state == 2) {
     image(Kaffe, 0, 0);
@@ -83,7 +84,7 @@ void draw() {
   } else if (state == 13) {
     image(Betaling2, 0, 0);
   } else if (state == 14) {
-    background(0); 
+    image(Skænk, 0, 0, width, height);
   } else if (state == 15) {
     background(0); 
   } else if (state == 16) {
@@ -95,7 +96,7 @@ void draw() {
 void mousePressed() {
   idletime = 0;
 
-  if (state==0&&mouseX>543&&mouseX<543+202&&mouseY>251&&mouseY<251+217) {
+  if (state==0&&mouseX>543&&mouseX<543+202&&mouseY>251&&mouseY<251+217) { // her laver vi et område man klikker på for at komme videre.
     state = 1;
   } else if (state==1&&mouseX>22&&mouseX<22+252&&mouseY>519&&mouseY<519+196) {
     state = 2;
@@ -147,11 +148,5 @@ void mousePressed() {
     state = 16;
   } else if (state==13&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
     state = 17;
-  }
-
-  if (mousePressed == true) {
-    x = mouseX;
-    y = mouseY;
-    println("x is now: " + x + " y is now: " + y);
   }
 }
