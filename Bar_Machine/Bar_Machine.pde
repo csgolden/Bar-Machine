@@ -1,20 +1,13 @@
 import processing.video.*; //til at indsætte videoer som baggrund
 
 
-PImage Forside; //start
-PImage Menu; //Menu med drikke
-PImage Kaffe; //kaffe info
-PImage The; //The info
-PImage ÆbleJuice; //ÆbleJuice info
-PImage AppelsinJuice; //AppelsinJuice info
-PImage Metode1; //Metode 1
-PImage Metode2; //Metode 2
-PImage Betaling1; //Betaling 1
-PImage Betaling2; //Betaling 2
-Movie Skænk; //skænk animation
-Movie movie; //start skærm
+
+PImage Betaling1, Betaling2, Metode2, Metode1, AppelsinJuice, ÆbleJuice, The, Kaffe, Menu, Forside; //Billeder til programmet
+
+Movie movie, Skænk; // Animationer til programmet
 Byte state = 0;
 int idletime = 0;
+
 
 
 
@@ -34,7 +27,7 @@ void setup() {
   Betaling1 = loadImage("Betaling1.jpg");
   Betaling2 = loadImage("Betaling2.jpg");
   Skænk = new Movie(this, "Haeldop.mp4");
-  
+
   movie.loop();
   Skænk.loop();
 }
@@ -45,7 +38,7 @@ void movieEvent(Movie m) {
 
 void draw() {
   idletime += 1;
-  if (idletime>30*frameRate) {
+  if (idletime>20*frameRate) {
     state = 0;
     idletime = 0;
   }
@@ -88,12 +81,6 @@ void draw() {
   } else if (state == 14) {
     background(0);
     image(Skænk, 0, 0, width, height);
-  } else if (state == 15) {
-    background(0);
-  } else if (state == 16) {
-    background(0);
-  } else if (state == 17) {
-    background(0);
   }
 }
 void mousePressed() {
