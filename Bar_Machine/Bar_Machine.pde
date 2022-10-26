@@ -32,9 +32,10 @@ void setup() {
   Metode2 = loadImage("Beløb2.jpg");
   Betaling1 = loadImage("Betaling1.jpg");
   Betaling2 = loadImage("Betaling2.jpg");
-  Skænk = new Movie(this, "Hældop.mp4");
+  Skænk = new Movie(this, "Haeldop.mp4");
 
   movie.loop();
+  Skænk.loop();
 }
 
 void movieEvent(Movie m) {
@@ -84,6 +85,7 @@ void draw() {
   } else if (state == 13) {
     image(Betaling2, 0, 0);
   } else if (state == 14) {
+    background(0);
     image(Skænk, 0, 0, width, height);
   } else if (state == 15) {
     background(0); 
@@ -134,19 +136,19 @@ void mousePressed() {
     state = 5;
   } else if (state==6&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
     state = 8;
-  } else if (state==6&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
+  } else if (state==10&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
     state = 12;
   } else if (state==7&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
     state = 9;
-  } else if (state==7&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
+  } else if (state==11&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
     state = 13;
   } else if (state==8&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
     state = 14;
   } else if (state==12&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
-    state = 15;
+    state = 14;
   } else if (state==9&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
-    state = 16;
+    state = 14;
   } else if (state==13&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
-    state = 17;
+    state = 14;
   }
 }
