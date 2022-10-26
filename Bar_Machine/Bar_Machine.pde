@@ -13,8 +13,9 @@ PImage Betaling1; //Betaling 1
 PImage Betaling2; //Betaling 2
 Movie Skænk; //skænk animation
 Movie movie; //start skærm
-Byte state = 0; 
+Byte state = 0;
 int idletime = 0;
+
 
 
 
@@ -33,7 +34,7 @@ void setup() {
   Betaling1 = loadImage("Betaling1.jpg");
   Betaling2 = loadImage("Betaling2.jpg");
   Skænk = new Movie(this, "Haeldop.mp4");
-
+  
   movie.loop();
   Skænk.loop();
 }
@@ -88,11 +89,11 @@ void draw() {
     background(0);
     image(Skænk, 0, 0, width, height);
   } else if (state == 15) {
-    background(0); 
+    background(0);
   } else if (state == 16) {
-    background(0); 
+    background(0);
   } else if (state == 17) {
-    background(0); 
+    background(0);
   }
 }
 void mousePressed() {
