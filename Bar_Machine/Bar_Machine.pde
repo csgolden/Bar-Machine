@@ -1,16 +1,9 @@
 import processing.video.*; //til at indsætte videoer som baggrund
 
-
-
 PImage Betaling1, Betaling2, Metode2, Metode1, AppelsinJuice, ÆbleJuice, The, Kaffe, Menu, Forside; //Billeder til programmet
-
 Movie movie, Skænk; // Animationer til programmet
 Byte state = 0;
 int idletime = 0;
-
-
-
-
 
 void setup() {
   size(1280, 720);
