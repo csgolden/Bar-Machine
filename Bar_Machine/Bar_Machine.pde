@@ -83,7 +83,6 @@ void draw() {
   } else if (state == 13) {
     image(Betaling2, 0, 0);
   } else if (state == 14) {
-    background(0);
     image(Skænk, 0, 0, width, height);
   }
 }
