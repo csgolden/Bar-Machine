@@ -1,3 +1,14 @@
+/////////////////////////////////////////////////////////
+////                                                 ////
+////                                                 ////
+////                 Bar Maskine                     ////
+////                     Af                          ////
+////                   Oliver                        ////
+////                     Og                          ////
+////                   Magnus                        ////
+////                                                 ////
+////                                                 ////
+/////////////////////////////////////////////////////////
 import processing.video.*; //til at indsætte videoer som baggrund
 
 PImage Betaling1, Betaling2, Metode2, Metode1, AppelsinJuice, ÆbleJuice, The, Kaffe, Menu, Forside; //Billeder til programmet
