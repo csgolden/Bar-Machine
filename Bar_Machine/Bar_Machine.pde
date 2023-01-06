@@ -84,6 +84,7 @@ void draw() {
     image(Betaling2, 0, 0);
   } else if (state == 14) {
     image(Skænk, 0, 0, width, height);
+    loadStrings("http://10.113.9.124/STRING?M0=8");
   }
 }
 void mousePressed() {
@@ -127,6 +128,7 @@ void mousePressed() {
     state = 5;
   } else if (state==6&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
     state = 8;
+  
   } else if (state==10&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
     state = 12;
   } else if (state==7&&mouseX>697&&mouseX<697+394&&mouseY>53&&mouseY<53+236) {
