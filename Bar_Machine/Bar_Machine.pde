@@ -42,7 +42,7 @@ void movieEvent(Movie m) {
 
 void draw() {
   idletime += 1;
-  if (idletime>20*frameRate) {
+  if (idletime>5*frameRate) {
     state = 0;
     idletime = 0;
   }
@@ -84,7 +84,16 @@ void draw() {
     image(Betaling2, 0, 0);
   } else if (state == 14) {
     image(Skænk, 0, 0, width, height);
-    loadStrings("http://10.113.9.124/STRING?M0=8");
+    loadStrings("http://192.168.27.58/STRING?M0=8");
+  }  else if (state == 15) {
+    image(Skænk, 0, 0, width, height);
+    loadStrings("http://192.168.27.58/STRING?M0=8");
+  }  else if (state == 16) {
+    image(Skænk, 0, 0, width, height);
+    loadStrings("http://192.168.27.58/STRING?M0=8");
+  }  else if (state == 17) {
+    image(Skænk, 0, 0, width, height);
+    loadStrings("http://192.168.27.58/STRING?M0=8");
   }
 }
 void mousePressed() {
@@ -138,10 +147,10 @@ void mousePressed() {
   } else if (state==8&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
     state = 14;
   } else if (state==12&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
-    state = 14;
+    state = 15;
   } else if (state==9&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
-    state = 14;
+    state = 16;
   } else if (state==13&&mouseX>720&&mouseX<720+132&&mouseY>436&&mouseY<436+29) {
-    state = 14;
+    state = 17;
   }
 }
